@@ -77,9 +77,12 @@
                         <li>Performing</li>
                         <li>Adjourning</li>
                     </ol>
-                    <img class="Team-Topology"
-                        src="screenshots\Team Topology.png"
-                        alt="Team Formation Insights">
+                    <details>
+                        <summary>Picture</summary>
+                        <img class="Team-Topology"
+                            src="screenshots\Team Topology.png"
+                            alt="Team Formation Insights">
+                    </details>
                 <h2 id="Great Team">5 Things that Create A Great Team</h2>
                     <ol>
                         <li>Psychological Safety</li>
@@ -88,12 +91,131 @@
                         <li>Meaning of Work</li>
                         <li>Impact of Work</li>
                     </ol>
-                    <img class="Pyschological-Safety"
-                        src="screenshots\Psych Safety.png"
-                        alt="Why psychological safety is important">
+                    <details>
+                        <summary>Picture</summary>
+                        <img class="Pyschological-Safety"
+                            src="screenshots\Psych Safety.png"
+                            alt="Why psychological safety is important">
+                    </details>
         </main>
         <hr>
         <footer>
+
+            <form action="" method="get">
+                <label for="name">Enter your name: </label>
+                <input type="text" name="name" id="name" required>
+            </form>
+            <br>
+
+            <fieldset>
+                <legend>What is the best game in your opinion?</legend>
+
+                <input type="radio" id="among us" name="game" value="A">
+                <label for="among us">Among Us (You're wrong)</label>
+                <br>
+
+                <input type="radio" id="tetris" name="game" value="T">
+                <label for="tetris">Tetris (Not right either)</label>
+                <br>
+
+                <input type="radio" id="mario party" name="game" value="M">
+                <label for="mario party">Mario Party (If you don't agree, you're just wrong)</label>
+
+            </fieldset>
+            <br>
+
+            <label for="explain">Explain if you don't agree with my opinion:</label>
+
+            <textarea id="explain" name="explain" rows="5" cols="33">I like...</textarea>
+            <br>
+
+            <label for="today">What's today's date:</label>
+            <br>
+
+            <input type="date" id="today" name="today's date" value="0000-00-00" min="1500-01-01" max="2024-01-01">
+            <br>
+
+            <label for="color">What's your favorite color:</label>
+            <br>
+
+            <select name="colors" id="color">
+                <option value="">--Please choose an option--</option>
+                <option value="white">White</option>
+                <option value="black">Black</option>
+                <option value="grey">Grey</option>
+                <option value="brown">Brown</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="yellow">Yellow</option>
+                <option value="purple">Purple</option>
+                <option value="pink">Pink</option>
+            </select>
+            <br>
+
+            <label for="favorite-day-of-week">Choose your favorite day in the week:</label>
+            <br>
+
+            <input list="day" id="favorite-day-of-week" name="favorite-day-of-week">
+
+            <datalist id="day">
+                <option value="Monday"></option>
+                <option value="Tuesday"></option>
+                <option value="Wednesday"></option>
+                <option value="Thursday"></option>
+                <option value="Friday"></option>
+                <option value="Saturday"></option>
+                <option value="Sunday"></option>
+            </datalist>
+            <br>
+
+            <fieldset>
+                <legend>Things to include in the <i>forms</i> section:</legend>
+
+                <div>
+                    <input type="checkbox" id="form">
+                    <label for="form">Form</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="fieldset">
+                    <label for="fieldset">Fieldset</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="input">
+                    <label for="input">Inputs (checkbox, radio, text, and date)</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="textarea">
+                    <label for="textarea">Textarea</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="datalist">
+                    <label for="datalist">Datalist</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="select">
+                    <label for="select">Select</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="option">
+                    <label for="option">Option</label>
+                </div>
+
+                <div>
+                    <input type="checkbox" id="button">
+                    <label for="button">Button</label>
+                </div>
+
+            </fieldset>
+            <br>
+
+            <button class="favorite styled" type="button">Don't Press Me</button>
         </footer>
     </body>
 </html>
