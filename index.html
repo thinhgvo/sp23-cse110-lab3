@@ -6,21 +6,24 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="icon" sizes="114x114" href="screenshots/chatgpt-logo-02AFA704B5-seeklogo.com.png" type="image/png" />
+        <link rel="stylesheet" href="mystyle.css" type="text/css" />
     </head>
     <body>
         <header>
-            <span><b>Time Stamps</b></span>
-            <nav>
-                <ul>
-                    <li><a href="#Find-And-Sit-With-Your-Team">Form Team</a></li>
-                    <li><a href="#Introduce-Myself-and-Listen">Team Talk</a></li>
-                    <li><a href="#Lecture">Lecture Starts</a></li>
-                </ul>
-            </nav>
+            <div class="header-container">
+                <span class="content"><b>Time Stamps</b></span>
+                <nav>
+                    <ul>
+                        <li><a href="#Find-And-Sit-With-Your-Team" style="color: aqua;">Form Team</a></li>
+                        <li><a href="#Introduce-Myself-and-Listen" style="color: aqua;">Team Talk</a></li>
+                        <li><a href="#Lecture" style="color: aqua;">Lecture Starts</a></li>
+                    </ul>
+                </nav>
+            </div>
         </header>
         <main>
-            <p><em>This video summarizes what happened on Thursday</em></p>
-            <video controls width = "250">
+            <p class="video-description"><em>This video summarizes what happened on Thursday</em></p>
+            <video controls>
 
                 <source src="screenshots/videoplayback.webm" type="video/webm">
                 
@@ -89,127 +92,144 @@
                     </ol>
                     <details>
                         <summary>Picture</summary>
-                        <img class="Pyschological-Safety" src="screenshots/Psych-Safety.png" alt="Why psychological safety is important">
+                        <img class="Psychological-Safety" src="screenshots/Psych-Safety.png" alt="Why psychological safety is important">
                     </details>
         </main>
         <hr>
         <footer>
 
-            <form method="get">
+            <form class="container" method="get">
                 <label for="name">Enter your name: </label>
                 <input type="text" name="name" id="name" required>
+
+                <fieldset>
+                    <legend>What is the best game in your opinion?</legend>
+    
+                    <input type="radio" id="among-us" name="game" value="A">
+                    <label for="among-us">Among Us (You're wrong)</label>
+                    <br>
+    
+                    <input type="radio" id="tetris" name="game" value="T">
+                    <label for="tetris">Tetris (Not right either)</label>
+                    <br>
+    
+                    <input type="radio" id="mario-party" name="game" value="M">
+                    <label for="mario-party">Mario Party (If you don't agree, you're just wrong)</label>
+    
+                </fieldset>
+                <br>
+    
+                <label for="explain">Explain if you don't agree with my opinion:</label>
+                <br>
+    
+                <textarea id="explain" name="explain" rows="5" cols="33">I like...</textarea>
+                <br>
+    
+                <label for="today">What's today's date:</label>
+                <br>
+    
+                <input type="date" id="today" name="today's-date" min="1500-01-01" max="2024-01-01">
+                <br>
+    
+                <label for="color">What's your favorite color:</label>
+                <br>
+    
+                <select name="colors" id="color">
+                    <option value="">--Please choose an option--</option>
+                    <option value="white">White</option>
+                    <option value="black">Black</option>
+                    <option value="grey">Grey</option>
+                    <option value="brown">Brown</option>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="purple">Purple</option>
+                    <option value="pink">Pink</option>
+                </select>
+                <br>
+    
+                <label for="favorite-day-of-week">Choose your favorite day in the week:</label>
+                <br>
+    
+                <input list="day" id="favorite-day-of-week" name="favorite-day-of-week">
+    
+                <datalist id="day">
+                    <option value="Monday"></option>
+                    <option value="Tuesday"></option>
+                    <option value="Wednesday"></option>
+                    <option value="Thursday"></option>
+                    <option value="Friday"></option>
+                    <option value="Saturday"></option>
+                    <option value="Sunday"></option>
+                </datalist>
+                <br>
+    
+                <fieldset>
+                    <legend>Things to include in the <i>forms</i> section:</legend>
+    
+                    <div>
+                        <input type="checkbox" id="form">
+                        <label for="form">Form</label>
+                    </div>
+    
+                    <div>
+                        <input type="checkbox" id="fieldset">
+                        <label for="fieldset">Fieldset</label>
+                    </div>
+    
+                    <div>
+                        <input type="checkbox" id="input">
+                        <label for="input">Inputs (checkbox, radio, text, and date)</label>
+                    </div>
+    
+                    <div>
+                        <input type="checkbox" id="textarea">
+                        <label for="textarea">Textarea</label>
+                    </div>
+    
+                    <div>
+                        <input type="checkbox" id="datalist">
+                        <label for="datalist">Datalist</label>
+                    </div>
+    
+                    <div>
+                        <input type="checkbox" id="select">
+                        <label for="select">Select</label>
+                    </div>
+    
+                    <div>
+                        <input type="checkbox" id="option">
+                        <label for="option">Option</label>
+                    </div>
+    
+                    <div>
+                        <input type="checkbox" id="button">
+                        <label for="button">Button</label>
+                    </div>
+    
+                </fieldset>
+                <br>
+    
+                <button class="favorite styled" type="button">Don't Press Me</button>
             </form>
-            <br>
+            <hr>
 
-            <fieldset>
-                <legend>What is the best game in your opinion?</legend>
+            <article class="image1">
+                <img src="screenshots/5954b408c66525ad932faa693a647e3f.png" type="image/png">
+                <img src="screenshots\ba927ff34cd961ce2c184d47e8ead9f6.png" type="image/png">
+            </article>
+            <hr>
 
-                <input type="radio" id="among-us" name="game" value="A">
-                <label for="among-us">Among Us (You're wrong)</label>
-                <br>
-
-                <input type="radio" id="tetris" name="game" value="T">
-                <label for="tetris">Tetris (Not right either)</label>
-                <br>
-
-                <input type="radio" id="mario-party" name="game" value="M">
-                <label for="mario-party">Mario Party (If you don't agree, you're just wrong)</label>
-
-            </fieldset>
-            <br>
-
-            <label for="explain">Explain if you don't agree with my opinion:</label>
-
-            <textarea id="explain" name="explain" rows="5" cols="33">I like...</textarea>
-            <br>
-
-            <label for="today">What's today's date:</label>
-            <br>
-
-            <input type="date" id="today" name="today's-date" min="1500-01-01" max="2024-01-01">
-            <br>
-
-            <label for="color">What's your favorite color:</label>
-            <br>
-
-            <select name="colors" id="color">
-                <option value="">--Please choose an option--</option>
-                <option value="white">White</option>
-                <option value="black">Black</option>
-                <option value="grey">Grey</option>
-                <option value="brown">Brown</option>
-                <option value="red">Red</option>
-                <option value="green">Green</option>
-                <option value="blue">Blue</option>
-                <option value="yellow">Yellow</option>
-                <option value="purple">Purple</option>
-                <option value="pink">Pink</option>
-            </select>
-            <br>
-
-            <label for="favorite-day-of-week">Choose your favorite day in the week:</label>
-            <br>
-
-            <input list="day" id="favorite-day-of-week" name="favorite-day-of-week">
-
-            <datalist id="day">
-                <option value="Monday"></option>
-                <option value="Tuesday"></option>
-                <option value="Wednesday"></option>
-                <option value="Thursday"></option>
-                <option value="Friday"></option>
-                <option value="Saturday"></option>
-                <option value="Sunday"></option>
-            </datalist>
-            <br>
-
-            <fieldset>
-                <legend>Things to include in the <i>forms</i> section:</legend>
-
-                <div>
-                    <input type="checkbox" id="form">
-                    <label for="form">Form</label>
+            <article class="image2">
+                <div class="a">
+                <img src="screenshots/r3lcc7gf64791.png" type="image/png">
                 </div>
-
-                <div>
-                    <input type="checkbox" id="fieldset">
-                    <label for="fieldset">Fieldset</label>
+                
+                <div class="b">
+                    <img src="screenshots/maxresdefault.png" type="image/png">
                 </div>
-
-                <div>
-                    <input type="checkbox" id="input">
-                    <label for="input">Inputs (checkbox, radio, text, and date)</label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="textarea">
-                    <label for="textarea">Textarea</label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="datalist">
-                    <label for="datalist">Datalist</label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="select">
-                    <label for="select">Select</label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="option">
-                    <label for="option">Option</label>
-                </div>
-
-                <div>
-                    <input type="checkbox" id="button">
-                    <label for="button">Button</label>
-                </div>
-
-            </fieldset>
-            <br>
-
-            <button class="favorite styled" type="button">Don't Press Me</button>
+            </article>
         </footer>
     </body>
 </html>

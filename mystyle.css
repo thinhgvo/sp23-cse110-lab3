@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+html {
+    background-color: rgb(61, 100, 167);
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+    h1 {
+        font-family: 'Raleway', sans-serif;
+
+        text-decoration: underline;
+        text-align: center;
+        min-width: 10px;
+    }
+}
+
+/* Header Box */
+header {
+    border: 1in hidden;
+    border-radius: 10px;
+
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 0;
+    padding-top: 10px;
+
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.header-container {
+    background-color: rgb(47, 49, 79);
+
+    border-style: ridge;
+    border-radius: 10px; /* absolute unit: px */
+    border-top-right-radius: 30px;
+
+    padding: 15px 20px;
+}
+
+/* Table of Content */
+header span {
+    color: #00ffff;
+}
+
+/* Description of the video */
+.video-description {
+    color: orange;
+
+    margin: 0 5em 5px 28.5em;
+}
+
+/* Video */
+video {
+    width: 300px;
+
+    position: static;
+
+    margin: 10px 10em 0 29.5em;
+
+    border-style: solid;
+    border-radius: 0.5rem; /* relative unit: rem */
+}
+
+figcaption {
+    color: hsl(39, 100%, 50%);
+
+    margin-left: 13cm; /* absolute unit: cm */
+    margin-right: 5cm;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+audio {
+    margin-top: 1em; /* relative unit: em */
+    margin-bottom: 0;
+    margin-left: 11.5cm;
+    margin-right: 0;
+
+    display: inline-block;
+}
+
+main h1 {
+    color: rgb(255, 255, 255);
+}
+
+.Team-Topology {
+    width: 20.2lh; /* relative unit: lh */
+    height: auto;
+
+    margin: auto;
+    display: block;
+}
+
+.Psychological-Safety {
+    width: 100mm; /* absolute unit: mm */
+    height: auto;
+
+    margin: auto;
+    display: block;
+}
+
+form.container {
+    width: 100%;
+}
+
+form.container label {
+    width: 100%;
+}
+
+/* pseudo-class */
+a:active {
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+/* Flex Layout */
+.image1 {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+/* Grid Layout */
+.image2 {
+    display: grid;
+
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas:
+     "header header header header"
+     "main main . sidebar"
+     "footer footer footer footer";
+    gap: 0.5em;
+}
+
+.a {
+    grid-area: siderbar;
+}
+
+.b {
+    grid-area: header;
+}
