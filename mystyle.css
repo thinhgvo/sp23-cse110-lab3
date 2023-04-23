@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@200&display=swap');
 
 html {
     background-color: rgb(61, 100, 167);
@@ -13,6 +13,11 @@ html {
         text-align: center;
         min-width: 10px;
     }
+
+}
+
+* {
+    box-sizing: border-box;
 }
 
 /* Header Box */
@@ -84,8 +89,33 @@ audio {
     display: inline-block;
 }
 
+h1 + div {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Child Combinator */
+ol>li {
+    color: blanchedalmond;
+}
+
+/* Descendant Combinator */
 main h1 {
     color: rgb(255, 255, 255);
+}
+
+/* ID Selector and Selector List */
+#Stages, #Great-Team {
+    font-family: 'Raleway', sans-serif;
+}
+
+/* Attribute Selector */
+label[for="mario-party"] {
+    font-family: 'Pacifico', cursive;
+}
+
+/* General Sibling Combinator */
+legend ~ label {
+    font-family: 'Pacifico', cursive;
 }
 
 .Team-Topology {
@@ -104,6 +134,7 @@ main h1 {
     display: block;
 }
 
+/* Combining Two Selectors */
 form.container {
     width: 100%;
 }
@@ -115,8 +146,10 @@ form.container label {
 /* pseudo-class */
 a:active {
     text-decoration: none;
+    background-color: royalblue;
 }
 
+/* Pseudo-class Selector */
 a:hover {
     color: red;
 }
